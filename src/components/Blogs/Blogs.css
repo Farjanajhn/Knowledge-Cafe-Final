@@ -1,6 +1,7 @@
 .blog-container{
   display:flex;
  justify-content: space-around;
+
   
 }
 
@@ -11,9 +12,10 @@
 }
 
 .blog-container .sideCart{
- background-color: gray;
+
   width: 35%;
   border-radius: 5px;
+  
 }
 .blog-container .sideCart .BookMarkCounter{
 text-align: center;

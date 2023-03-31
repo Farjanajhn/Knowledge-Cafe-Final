@@ -3,7 +3,7 @@ import './SingleBlog.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookBookmark } from '@fortawesome/free-solid-svg-icons';
 
-const SingleBlog = ({ blog,handleAddCart }) => {
+const SingleBlog = ({ blog,handleAddCart ,handleReadTime}) => {
  
  /*  console.log(blog) */
   return (
@@ -30,7 +30,7 @@ const SingleBlog = ({ blog,handleAddCart }) => {
 
         <div className="readTime">
           <p>{blog.readTime}(min read)</p>
-          <p><FontAwesomeIcon icon={faBookBookmark} /></p>
+          <p onClick={()=>handleReadTime(blog.readTime)}><FontAwesomeIcon icon={faBookBookmark} /></p>
         </div>
     </div>
       <h2>{blog.blog_title}</h2>
