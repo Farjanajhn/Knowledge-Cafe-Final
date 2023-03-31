@@ -33,4 +33,10 @@
     border-radius: 100px;
     margin-top: 15px;
   }
+
+  .single_blog .readTime{
+    display: flex;
+    gap:5px;
+
+  }
   
