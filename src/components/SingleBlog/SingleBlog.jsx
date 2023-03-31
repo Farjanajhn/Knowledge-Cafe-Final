@@ -8,7 +8,8 @@ import { ToastContainer, toast } from 'react-toastify';
 const SingleBlog = ({ blog,handleAddCart ,handleReadTime}) => {
  
   const handleToast = () => {
-    toast("Wow so easy!")
+
+ toast("Wow so easy!")
   }
  /*  console.log(blog) */
   return (

@@ -2,22 +2,23 @@
   display:flex;
  justify-content: space-around;
 
+
   
 }
 
-.blog-container .blogCart{
+ .blogCart{
 
   width: 55%;
-  
-}
 
-.blog-container .sideCart{
+}
+.sideCart{
 
   width: 35%;
   border-radius: 5px;
   
+  
 }
-.blog-container .sideCart .BookMarkCounter{
+ .BookMarkCounter{
 text-align: center;
 }
 
@@ -33,7 +34,7 @@ text-align: center;
 }
 
 @media only screen and (max-width: 600px){
-  .blog-container .sideCart .BookMarkCounter{
+   .BookMarkCounter{
     width: 378px;
     margin-top: 40px;
   }
