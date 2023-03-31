@@ -1,0 +1,16 @@
+.blog-container{
+  display:flex;
+ justify-content: space-around;
+  
+}
+
+.blog-container .blogCart{
+
+  width: 55%;
+  
+}
+
+.blog-container .sideCart{
+
+  width: 35%;
+}
