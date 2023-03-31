@@ -38,8 +38,18 @@
   }
 
   .single_blog .readTime{
-    display: flex;
+    display:flex;
     gap:5px;
 
   }
+
+  @media only screen and (max-width: 600px){
+    .single_blog img,.single_blog {
+      width: 306px;
+      margin-top: 40px;
+      flex-direction: column;
+      border-bottom: 1px solid rebeccapurple;
+    }
+  }
+  
   
