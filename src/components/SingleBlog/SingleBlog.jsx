@@ -40,8 +40,9 @@ const SingleBlog = ({ blog,handleAddCart ,handleReadTime}) => {
         </div>
     </div>
       <h2>{blog.blog_title}</h2>
-      <p onClick={() => handleAddCart(blog)} style={{color:'blueviolet'}}>Mark as read</p> 
-    
+      <p onClick={() => handleAddCart(blog)} style={{ color: 'blueviolet',  textDecoration: 'underline' }}>Mark as read</p> 
+      
+  
   </div>
 
   );
