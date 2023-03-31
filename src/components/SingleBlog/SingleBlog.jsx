@@ -1,0 +1,42 @@
+import React from 'react';
+import './SingleBlog.css'
+
+const SingleBlog = ({ blog }) => {
+ /*  console.log(blog) */
+  return (
+    <div className='single_blog'>
+    <img className="cover-image" src={blog.cover_image} alt="" />
+    <div className='blog-information'>
+      
+    
+        <div className="author-detail">
+          <div className='author'>
+          <img src={blog.author_image} alt="" />
+          </div>
+          <div>
+            <p>{blog.author_name}</p>
+          <p>
+              { blog.published_date}(4 days ago)
+          </p>
+          </div>
+          </div>
+    
+      
+
+
+
+        <div className="readTime">
+          <p>{blog.readTime}min read</p>
+     
+        <p></p>
+        </div>
+    </div>
+      <h2>{blog.blog_title}</h2>
+    <p >Mark as read</p> 
+    
+  </div>
+
+  );
+};
+
+export default SingleBlog;

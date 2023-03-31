@@ -1,0 +1,36 @@
+.single_blog {
+  margin-top: 20px;
+  border-bottom: 1px solid gray;
+  gap:4px;
+  width:80%;
+  padding-left: 50px;
+  
+  
+  
+  }
+  
+  .single_blog .blog-information .author-detail{
+    display:flex;
+    gap:5px;
+    text-align: center;
+  }
+  
+  .single_blog .blog-information{
+    display:flex;
+    justify-content: space-between;
+  
+  }
+  .single_blog img{
+    width:100%;
+    border-radius: 10px;
+  
+   
+  }
+  
+  .single_blog .blog-information .author-detail .author img{
+    width: 70px;
+    height: 60px;
+    border-radius: 100px;
+    margin-top: 15px;
+  }
+  
