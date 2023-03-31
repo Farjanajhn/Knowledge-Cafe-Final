@@ -1,9 +1,10 @@
 import React from 'react';
 import './SingleBlog.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBookBookmark, } from '@fortawesome/free-solid-svg-icons';
+import { faBookBookmark } from '@fortawesome/free-solid-svg-icons';
 
-const SingleBlog = ({ blog }) => {
+const SingleBlog = ({ blog,handleAddCart }) => {
+ 
  /*  console.log(blog) */
   return (
     <div className='single_blog'>
@@ -33,7 +34,7 @@ const SingleBlog = ({ blog }) => {
         </div>
     </div>
       <h2>{blog.blog_title}</h2>
-    <p>Mark as read</p> 
+    <p onClick={()=>handleAddCart(blog)}>Mark as read</p> 
     
   </div>
 
