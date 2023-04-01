@@ -9,7 +9,7 @@ import './Blogs.css'
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
   const [bookMarkList, setBookMarkList] = useState([]);
-  const [readTime, setReadTime] = useState("");
+  const [time, setTime] = useState(0);
   useEffect(() => {
     fetch('data.json')
       .then(res => res.json())
@@ -17,12 +17,10 @@ const Blogs = () => {
   }, []); 
 
 
-
-
   const handleAddCart = (blog) => {
     const newBookMarkList = [...bookMarkList, blog];
     setBookMarkList(newBookMarkList);
-  }
+  }/* 
 
   const handleReadTime = (readTime) => {
     const previousReadTime = JSON.parse(localStorage.getItem('readTime'))
@@ -37,6 +35,13 @@ const Blogs = () => {
       localStorage.setItem('readTime', readTime)
       setReadTime(readTime);
     }
+  }
+ */
+  
+  const handleReadTime = (readTime) => {
+    const newTime = time + readTime;
+    setTime(newTime);
+
   }
 
   return (
@@ -59,7 +64,7 @@ const Blogs = () => {
       <div className="sideCart">
      
         
-          <ReadTimer readTime={readTime}> </ReadTimer>
+          <ReadTimer time={time}></ReadTimer>
         
         <h2 className='BookMarkCounter'>Bookmarked Blogs :{bookMarkList.length }</h2>
         

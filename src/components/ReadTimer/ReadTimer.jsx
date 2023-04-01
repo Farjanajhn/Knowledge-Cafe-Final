@@ -3,15 +3,16 @@ import { useEffect } from 'react';
 
 import './ReadTimer.css';
 
-const ReadTimer = ({ readTime }) => {
+const ReadTimer = ({ time }) => {
   
- const [time, setTime] = useState(readTime);
+/*  const [time, setTime] = useState(readTime); */
 
-
-  useEffect(() => {
+ 
+/*   useEffect(() => {
     const getReadTime = JSON.parse(localStorage.getItem('readTime'))
     setTime(getReadTime);
-},[readTime])
+},[readTime]) */
+
   return (
     <div className="reader">
       <h2>Spent time on read :{time}</h2>

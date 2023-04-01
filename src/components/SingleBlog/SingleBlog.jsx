@@ -2,15 +2,11 @@ import React from 'react';
 import './SingleBlog.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark, faCoffee } from '@fortawesome/free-solid-svg-icons';
-import { ToastContainer, toast } from 'react-toastify';
+
 
 
 const SingleBlog = ({ blog,handleAddCart ,handleReadTime}) => {
- 
-  const handleToast = () => {
 
- toast("Wow so easy!")
-  }
  /*  console.log(blog) */
   return (
     <div className='single_blog'>
@@ -35,7 +31,7 @@ const SingleBlog = ({ blog,handleAddCart ,handleReadTime}) => {
 
 
         <div className="readTime">
-          <p onClick={handleToast}> {blog.readTime}(min read)</p>
+          <p>{blog.readTime}(min read)</p>
           <p  onClick={() => handleReadTime(blog.readTime)}><FontAwesomeIcon icon={faBookmark} />
           </p>
         </div>
