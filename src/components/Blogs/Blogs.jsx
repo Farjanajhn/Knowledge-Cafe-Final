@@ -20,23 +20,9 @@ const Blogs = () => {
   const handleAddCart = (blog) => {
     const newBookMarkList = [...bookMarkList, blog];
     setBookMarkList(newBookMarkList);
-  }/* 
-
-  const handleReadTime = (readTime) => {
-    const previousReadTime = JSON.parse(localStorage.getItem('readTime'))
-    if(previousReadTime)
-    {
-      const sum = previousReadTime + readTime;
-      localStorage.setItem('readTime', sum);
-      setReadTime(sum);
-}
-   
-    else {
-      localStorage.setItem('readTime', readTime)
-      setReadTime(readTime);
-    }
   }
- */
+
+
   
   const handleReadTime = (readTime) => {
     const newTime = time + readTime;

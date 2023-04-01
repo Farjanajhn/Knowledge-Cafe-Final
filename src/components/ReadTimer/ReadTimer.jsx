@@ -5,13 +5,7 @@ import './ReadTimer.css';
 
 const ReadTimer = ({ time }) => {
   
-/*  const [time, setTime] = useState(readTime); */
 
- 
-/*   useEffect(() => {
-    const getReadTime = JSON.parse(localStorage.getItem('readTime'))
-    setTime(getReadTime);
-},[readTime]) */
 
   return (
     <div className="reader">
